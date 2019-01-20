@@ -39,7 +39,5 @@ ps="$(ps aux)"
 kbfsproc="$(echo "$ps" | grep kbfs | cut -d' ' -f1)"
 
 if [ "$kbfsproc" == "" ]; then
-	nohup kbfsfuse -mount-type=none > $HOME/bin/kbfs.log &
+    nohup kbfsfuse -mount-type=none > $HOME/bin/kbfs.log &
 fi
-
-exit 0
