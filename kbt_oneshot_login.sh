@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/data/data/com.termux/files/usr/bin/bash
 print_usage() {
     echo "oneshot_login - Log into Keybase via oneshot in Termux"
     echo ""
@@ -39,5 +39,5 @@ ps="$(ps aux)"
 kbfsproc="$(echo "$ps" | grep kbfs | cut -d' ' -f1)"
 
 if [ "$kbfsproc" == "" ]; then
-    nohup kbfsfuse -mount-type=none > $HOME/bin/kbfs.log &
+    nohup kbfsfuse -mount-type=none > ./kbfs.log &
 fi
