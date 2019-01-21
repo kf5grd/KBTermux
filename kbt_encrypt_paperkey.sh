@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/data/data/com.termux/files/usr/bin/bash
 print_usage() {
     echo "enc_paperkey - Encrypt Keybase paper key for secure storage."
     echo ""
@@ -9,7 +9,7 @@ print_usage() {
 
 exit_error() {
     local message="$1"
-    echo "Error: $1"
+    echo "Error: $message"
     echo ""
     print_usage
     exit 1
