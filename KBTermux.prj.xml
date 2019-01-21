@@ -19,7 +19,7 @@
 	<Profile sr="prof177" ve="2">
 		<cdate>1547996170540</cdate>
 		<clp>true</clp>
-		<edate>1548072454704</edate>
+		<edate>1548080930627</edate>
 		<id>177</id>
 		<limit>true</limit>
 		<mid0>175</mid0>
@@ -36,7 +36,7 @@
 	<Profile sr="prof181" ve="2">
 		<cdate>1548006089477</cdate>
 		<clp>true</clp>
-		<edate>1548072442923</edate>
+		<edate>1548080931184</edate>
 		<id>181</id>
 		<limit>true</limit>
 		<mid0>175</mid0>
@@ -51,7 +51,7 @@
 		<name>KBTermux</name>
 		<pids>172,177,181</pids>
 		<scenes>Variable Query</scenes>
-		<tids>175,173,174</tids>
+		<tids>173,175,174</tids>
 	</Project>
 	<Scene sr="sceneVariable Query">
 		<cdate>1492204723061</cdate>
@@ -144,7 +144,7 @@
 	</Scene>
 	<Task sr="task173">
 		<cdate>1547953886380</cdate>
-		<edate>1548006817079</edate>
+		<edate>1548081260913</edate>
 		<id>173</id>
 		<nme>kbt_set_encrypted_paper_key</nme>
 		<pri>6</pri>
@@ -176,7 +176,7 @@
 	</Task>
 	<Task sr="task174">
 		<cdate>1547955471848</cdate>
-		<edate>1548068792384</edate>
+		<edate>1548080927533</edate>
 		<id>174</id>
 		<nme>kbt_user_setup</nme>
 		<pri>100</pri>
@@ -196,7 +196,7 @@
 			<Str sr="arg0" ve="3">Encryption Password</Str>
 			<Str sr="arg1" ve="3">%KB_EncPass</Str>
 			<Int sr="arg2" val="0"/>
-			<Str sr="arg3" ve="3">KBPersist</Str>
+			<Str sr="arg3" ve="3">KBTermux</Str>
 			<Str sr="arg4" ve="3"/>
 			<Str sr="arg5" ve="3">Variable Query</Str>
 			<Int sr="arg6" val="60"/>
