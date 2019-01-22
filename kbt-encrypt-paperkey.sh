@@ -1,6 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash
 print_usage() {
-    echo "enc_paperkey - Encrypt Keybase paper key for secure storage."
+    echo "enc-paperkey - Encrypt Keybase paper key for secure storage."
     echo ""
     echo "Usage: $0 <password> <paper key>"
     echo "Note: All arguments must be Base64 encoded due to limitations"

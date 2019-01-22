@@ -32,12 +32,12 @@ echo "Symlinking scripts..."
 mkdir -p ~/.termux/tasker
 command_status "create dir ~/.termux/tasker" "$?"
 SCRIPTPATH="$(cd "$(dirname "$0")"; pwd -P)"
-#ln -s "$SCRIPTPATH/kbt_encrypt_paperkey.sh" "~/.termux/tasker/kbt_encrypt_paperkey.sh"
-#ln -s "$SCRIPTPATH/kbt_oneshot_login.sh" "~/.termux/tasker/kbt_oneshot_login.sh"
-ln -s "$SCRIPTPATH/kbt_encrypt_paperkey.sh" "$HOME/.termux/tasker/kbt_encrypt_paperkey.sh" &&
-ln -s "$SCRIPTPATH/kbt_oneshot_login.sh" "$HOME/.termux/tasker/kbt_oneshot_login.sh" &&
-ln -s "$SCRIPTPATH/kbt_start_kbfs.sh" "$HOME/.termux/tasker/kbt_start_kbfs.sh" &&
-ln -s "$SCRIPTPATH/kbt_tmux.sh" "$HOME/.termux/tasker/kbt_tmux.sh"
+#ln -s "$SCRIPTPATH/kbt-encrypt-paperkey.sh" "~/.termux/tasker/kbt-encrypt-paperkey.sh"
+#ln -s "$SCRIPTPATH/kbt-oneshot-login.sh" "~/.termux/tasker/kbt-oneshot-login.sh"
+ln -s "$SCRIPTPATH/kbt-encrypt-paperkey.sh" "$HOME/.termux/tasker/kbt-encrypt-paperkey.sh" &&
+ln -s "$SCRIPTPATH/kbt-oneshot-login.sh" "$HOME/.termux/tasker/kbt-oneshot-login.sh" &&
+ln -s "$SCRIPTPATH/kbt-start-kbfs.sh" "$HOME/.termux/tasker/kbt-start-kbfs.sh" &&
+ln -s "$SCRIPTPATH/kbt-tmux.sh" "$HOME/.termux/tasker/kbt-tmux.sh"
 command_status "symlink scripts to ~/.termux/tasker" "$?"
 
 echo "Install complete"

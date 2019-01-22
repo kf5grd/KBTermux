@@ -1,9 +1,9 @@
 <TaskerData sr="" dvi="1" tv="5.6.5b">
-	<dmetric>1080.0,1920.0</dmetric>
+	<dmetric>1920.0,1080.0</dmetric>
 	<Profile sr="prof172" ve="2">
 		<cdate>1547953854631</cdate>
 		<clp>true</clp>
-		<edate>1548001576905</edate>
+		<edate>1548199862053</edate>
 		<id>172</id>
 		<mid0>173</mid0>
 		<nme>Receive Encrypted Paper Key</nme>
@@ -19,7 +19,7 @@
 	<Profile sr="prof177" ve="2">
 		<cdate>1547996170540</cdate>
 		<clp>true</clp>
-		<edate>1548080930627</edate>
+		<edate>1548200612199</edate>
 		<id>177</id>
 		<limit>true</limit>
 		<mid0>175</mid0>
@@ -36,7 +36,7 @@
 	<Profile sr="prof181" ve="2">
 		<cdate>1548006089477</cdate>
 		<clp>true</clp>
-		<edate>1548080931184</edate>
+		<edate>1548200613024</edate>
 		<id>181</id>
 		<limit>true</limit>
 		<mid0>175</mid0>
@@ -49,9 +49,9 @@
 	<Project sr="proj0" ve="2">
 		<cdate>1547952556243</cdate>
 		<name>KBTermux</name>
-		<pids>172,177,181</pids>
+		<pids>172,181,177</pids>
 		<scenes>Variable Query</scenes>
-		<tids>173,175,174</tids>
+		<tids>175,173,174</tids>
 	</Project>
 	<Scene sr="sceneVariable Query">
 		<cdate>1492204723061</cdate>
@@ -144,7 +144,7 @@
 	</Scene>
 	<Task sr="task173">
 		<cdate>1547953886380</cdate>
-		<edate>1548081260913</edate>
+		<edate>1548200777168</edate>
 		<id>173</id>
 		<nme>kbt_set_encrypted_paper_key</nme>
 		<pri>6</pri>
@@ -176,7 +176,7 @@
 	</Task>
 	<Task sr="task174">
 		<cdate>1547955471848</cdate>
-		<edate>1548080927533</edate>
+		<edate>1548200742158</edate>
 		<id>174</id>
 		<nme>kbt_user_setup</nme>
 		<pri>100</pri>
@@ -208,13 +208,13 @@
 				<Vals sr="val">
 					<com.termux.execute.arguments>%KB_EncPass %paperkey</com.termux.execute.arguments>
 					<com.termux.execute.arguments-type>java.lang.String</com.termux.execute.arguments-type>
-					<com.termux.tasker.extra.EXECUTABLE>kbt_encrypt_paperkey.sh</com.termux.tasker.extra.EXECUTABLE>
+					<com.termux.tasker.extra.EXECUTABLE>kbt-encrypt-paperkey.sh</com.termux.tasker.extra.EXECUTABLE>
 					<com.termux.tasker.extra.EXECUTABLE-type>java.lang.String</com.termux.tasker.extra.EXECUTABLE-type>
 					<com.termux.tasker.extra.TERMINAL>false</com.termux.tasker.extra.TERMINAL>
 					<com.termux.tasker.extra.TERMINAL-type>java.lang.Boolean</com.termux.tasker.extra.TERMINAL-type>
 					<com.termux.tasker.extra.VERSION_CODE>3</com.termux.tasker.extra.VERSION_CODE>
 					<com.termux.tasker.extra.VERSION_CODE-type>java.lang.Integer</com.termux.tasker.extra.VERSION_CODE-type>
-					<com.twofortyfouram.locale.intent.extra.BLURB>Execute ~/.termux/tasker/kbt_encrypt_paperkey.sh %KB_EncPass</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Execute ~/.termux/tasker/kbt-encrypt-paperkey.sh %KB_EncPass</com.twofortyfouram.locale.intent.extra.BLURB>
 					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
 					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>com.termux.tasker.extra.EXECUTABLE com.termux.execute.arguments com.termux.tasker.extra.TERMINAL</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
 					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
@@ -299,7 +299,7 @@
 	</Task>
 	<Task sr="task175">
 		<cdate>1547957505792</cdate>
-		<edate>1548072497454</edate>
+		<edate>1548200768347</edate>
 		<id>175</id>
 		<nme>kbt_oneshot_login</nme>
 		<pri>6</pri>
@@ -324,13 +324,13 @@
 				<Vals sr="val">
 					<com.termux.execute.arguments>%KB_Username %KB_EncPass %KB_PaperKey</com.termux.execute.arguments>
 					<com.termux.execute.arguments-type>java.lang.String</com.termux.execute.arguments-type>
-					<com.termux.tasker.extra.EXECUTABLE>kbt_oneshot_login.sh</com.termux.tasker.extra.EXECUTABLE>
+					<com.termux.tasker.extra.EXECUTABLE>kbt-oneshot-login.sh</com.termux.tasker.extra.EXECUTABLE>
 					<com.termux.tasker.extra.EXECUTABLE-type>java.lang.String</com.termux.tasker.extra.EXECUTABLE-type>
 					<com.termux.tasker.extra.TERMINAL>false</com.termux.tasker.extra.TERMINAL>
 					<com.termux.tasker.extra.TERMINAL-type>java.lang.Boolean</com.termux.tasker.extra.TERMINAL-type>
 					<com.termux.tasker.extra.VERSION_CODE>3</com.termux.tasker.extra.VERSION_CODE>
 					<com.termux.tasker.extra.VERSION_CODE-type>java.lang.Integer</com.termux.tasker.extra.VERSION_CODE-type>
-					<com.twofortyfouram.locale.intent.extra.BLURB>Execute ~/.termux/tasker/kbt_oneshot_login.sh %KB_Username %</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Execute ~/.termux/tasker/kbt-oneshot-login.sh %KB_Username %</com.twofortyfouram.locale.intent.extra.BLURB>
 					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
 					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>com.termux.tasker.extra.EXECUTABLE com.termux.execute.arguments com.termux.tasker.extra.TERMINAL</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
 					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
@@ -348,13 +348,13 @@
 				<Vals sr="val">
 					<com.termux.execute.arguments></com.termux.execute.arguments>
 					<com.termux.execute.arguments-type>java.lang.String</com.termux.execute.arguments-type>
-					<com.termux.tasker.extra.EXECUTABLE>kbt_tmux.sh</com.termux.tasker.extra.EXECUTABLE>
+					<com.termux.tasker.extra.EXECUTABLE>kbt-tmux.sh</com.termux.tasker.extra.EXECUTABLE>
 					<com.termux.tasker.extra.EXECUTABLE-type>java.lang.String</com.termux.tasker.extra.EXECUTABLE-type>
 					<com.termux.tasker.extra.TERMINAL>false</com.termux.tasker.extra.TERMINAL>
 					<com.termux.tasker.extra.TERMINAL-type>java.lang.Boolean</com.termux.tasker.extra.TERMINAL-type>
 					<com.termux.tasker.extra.VERSION_CODE>3</com.termux.tasker.extra.VERSION_CODE>
 					<com.termux.tasker.extra.VERSION_CODE-type>java.lang.Integer</com.termux.tasker.extra.VERSION_CODE-type>
-					<com.twofortyfouram.locale.intent.extra.BLURB>Execute ~/.termux/tasker/kbt_tmux.sh </com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Execute ~/.termux/tasker/kbt-tmux.sh </com.twofortyfouram.locale.intent.extra.BLURB>
 					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
 					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>com.termux.tasker.extra.EXECUTABLE com.termux.execute.arguments com.termux.tasker.extra.TERMINAL</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
 					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>

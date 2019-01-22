@@ -1,6 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash
 print_usage() {
-    echo "oneshot_login - Log into Keybase via oneshot in Termux"
+    echo "oneshot-login - Log into Keybase via oneshot in Termux"
     echo ""
     echo "Usage: $0 <keybase username> <paper key encryption password> <encrypted paper key>"
     echo "Note: All arguments must be base64 encoded due to limitations"
