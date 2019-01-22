@@ -17,7 +17,7 @@ exit_error() {
 
 send_intent() {
     local payload="$1"
-    local intent="net.devi1.kbpersist.set_paper_key"
+    local intent="pub.keybase.dxb.set_paper_key"
 
     am broadcast --user 0 -a "$intent" -e paperkey "$payload"
 }
